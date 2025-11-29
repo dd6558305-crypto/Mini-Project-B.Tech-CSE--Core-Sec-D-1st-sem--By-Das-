@@ -36,7 +36,7 @@ LCM = 40*/
 int main() {
     int a, b, x, y, gcd, lcm;
 
-   
+    printf("Enter the lengths of two wooden planks: ");
     scanf("%d %d", &a, &b);
 
     
@@ -59,3 +59,4 @@ int main() {
 
     return 0;
 }
+
