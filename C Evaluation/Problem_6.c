@@ -35,6 +35,7 @@ Where X is the number of students present and Y is the number of students absent
 
 int main() {
     int n;
+    printf("Enter total number of students in class: ");
     scanf("%d", &n);
 
     int attendance[n];
@@ -60,3 +61,4 @@ int main() {
 
     return 0;
 }
+
