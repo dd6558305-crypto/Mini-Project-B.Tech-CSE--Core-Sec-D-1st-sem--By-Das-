@@ -102,6 +102,7 @@ Highest spender: Student 1 and Student 3*/
 
 int main() {
     int n, m;
+    printf("Enter number of students & number of days: ");
     scanf("%d %d", &n, &m);
 
     int bill[n][m];
@@ -167,3 +168,4 @@ int main() {
 
     return 0;
 }
+
