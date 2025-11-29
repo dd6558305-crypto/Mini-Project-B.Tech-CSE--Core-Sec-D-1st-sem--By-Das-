@@ -31,7 +31,7 @@ Either "Perfect Secret Word" or "Not a Secret Word"*/
 int main() {
     char word[100];
     int length, i, isPalindrome = 1;
-
+    printf("Enter a word: ");
     scanf("%s", word);     
 
     length = strlen(word); 
@@ -51,3 +51,4 @@ int main() {
 
     return 0;
 }
+
