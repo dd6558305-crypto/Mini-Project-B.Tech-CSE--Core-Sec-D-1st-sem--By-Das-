@@ -42,22 +42,31 @@ Average Marks = 80.00*/
 #include <stdio.h>
 
 int main() {
-    int num;
-    scanf("%d", &num);
+    int n;
+
+   
+    printf("Enter the number of students: ");
+    scanf("%d", &n);
+
+    int marks[n];
+    int total = 0;
+    float average;
 
     
-    if (num % 2 == 0) {
-        printf("Even Number\n");
-    } else {
-        printf("Odd Number\n");
+    printf("Enter the marks of %d students: ", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &marks[i]);
+        total += marks[i];
     }
 
     
-    if (num % 5 == 0) {
-        printf("Divisible by 5");
-    } else {
-        printf("Not Divisible by 5");
-    }
+    average = (float) total / n;
+
+    
+    printf("Total Marks = %d\n", total);
+    printf("Average Marks = %.2f", average);
 
     return 0;
 }
+
+
