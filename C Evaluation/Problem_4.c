@@ -65,8 +65,11 @@ Day with Lowest Overall Attendance: Day 2*/
 int main() {
     int A[10][7];
 
-   
+    
+    printf("Enter attendance for 10 students (1 = Present, 0 = Absent):\n");
+
     for (int i = 0; i < 10; i++) {
+        printf("Enter attendance for Student %d (7 values): ", i + 1);
         for (int j = 0; j < 7; j++) {
             scanf("%d", &A[i][j]);
         }
@@ -75,19 +78,18 @@ int main() {
     int studentTotal[10] = {0};
     int dayTotal[7] = {0};
 
-   
+    
     for (int i = 0; i < 10; i++) {
         for (int j = 0; j < 7; j++) {
             studentTotal[i] += A[i][j];   
-            dayTotal[j] += A[i][j];       
+            dayTotal[j] += A[i][j];      
+        }
     }
 
-   
-    printf("Weekly Attendance Summary\n");
+    printf("\nWeekly Attendance Summary\n");
     printf("-------------------------\n\n");
 
     printf("Total Present Days:\n");
-
     for (int i = 0; i < 10; i++) {
         printf("Student %d: %d\n", i + 1, studentTotal[i]);
     }
@@ -114,7 +116,8 @@ int main() {
         }
     }
 
-    printf("\nDay with Lowest Overall Attendance: Day %d", lowestDay + 1);
+    printf("\nDay with Lowest Overall Attendance: Day %d\n", lowestDay + 1);
 
     return 0;
 }
+
