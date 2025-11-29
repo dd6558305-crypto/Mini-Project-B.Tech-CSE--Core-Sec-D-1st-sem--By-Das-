@@ -49,6 +49,7 @@ Z → X − Y*/
 
 int main() {
     int n;
+    printf("Enter number of days: ");
     scanf("%d", &n);
 
     int records[n];
@@ -77,3 +78,4 @@ int main() {
 
     return 0;
 }
+
