@@ -24,6 +24,7 @@ Highest marks in Computer Science: 95*/
 
 int main() {
     int marks[5][3];
+    printf("Enter marks of 5 students in 3 subjects (Math, Physics, CS):\n");
 
    
     for (int i = 0; i < 5; i++) {
@@ -56,3 +57,4 @@ int main() {
 
     return 0;
 }
+
