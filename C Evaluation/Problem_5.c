@@ -60,6 +60,7 @@ Output
 
 int main() {
     int n;
+    printf("Enter the number of days: ");
     scanf("%d", &n);
 
     int arr[n];
@@ -76,3 +77,4 @@ int main() {
 
     return 0;
 }
+
