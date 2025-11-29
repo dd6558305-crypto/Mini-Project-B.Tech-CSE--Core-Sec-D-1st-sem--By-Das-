@@ -28,7 +28,7 @@ F= (C*9/5)+32*/
 int main() {
     float C, F;
 
-    
+    printf("Enter temperature in celsius: ");
     scanf("%f", &C);
 
     
@@ -39,3 +39,4 @@ int main() {
 
     return 0;
 }
+
