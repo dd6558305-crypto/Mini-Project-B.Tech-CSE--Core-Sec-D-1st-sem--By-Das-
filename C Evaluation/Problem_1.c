@@ -47,7 +47,7 @@ Lowest = 29*/
 int main() {
     int n;
     
-   
+    printf("Enter number of subjects: ");
     scanf("%d", &n);
 
     int marks[n];
@@ -77,3 +77,4 @@ int main() {
 
     return 0;
 }
+
