@@ -32,6 +32,7 @@ Not Divisible by 5*/
 
 int main() {
     int num;
+    printf("Enter lucky number: ");
     scanf("%d", &num);
 
    
@@ -50,3 +51,4 @@ int main() {
 
     return 0;
 }
+
